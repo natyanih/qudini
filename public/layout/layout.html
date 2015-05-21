@@ -1,0 +1,40 @@
+<div class="container" data-ng-controller="Layout">
+    <nav class="navbar navbar-static-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="">
+                    <span class="glyphicon glyphicon-home"></span> Qudini Test App
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <add-customer customers="customers" on-added="getCustomers" ></add-customer>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-21">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3 class="text-center">Queueing Customers</h3>
+                    <hr />
+
+                    <customers customers="customers" customers-served="customersServed" on-served="onCustomerServed" on-removed="onCustomerRemoved" queue="true"></customers>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3 class="text-center">Served Customers</h3>
+                    <hr />
+                    <customers customers="customers" customers-served="customersServed" on-served="onCustomerServed" on-removed="onCustomerRemoved" queue="false"></customers>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <div class="pull-right">Nathanael O. Hinay, Applicant</div>
+    </div>
+</div>

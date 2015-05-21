@@ -1,0 +1,14 @@
+<form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="name">Customer: </label>
+    <input type="text" class="form-control" id="name" ng-model="vm.name" placeholder="Enter name" ng-change="vm.setDisabled()">
+  </div>
+  <div class="form-group">
+  <select class="form-control" ng-options="product.name for product in vm.products" ng-model="vm.product" placeholder="Product" ng-change="vm.setDisabled()">
+    <option value="">Choose Product</option>
+  </select>
+</div>
+  <button class="btn btn-primary" ng-click="vm.addCustomer()" ng-disabled="vm.disabled">Queue Customer</button>
+</form>
+
+

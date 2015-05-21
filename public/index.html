@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Queue App</title>
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="Queue">
+
+    <div data-ng-include="'/layout/layout.html'"></div>
+
+    <script src="/bower_components/angularjs/angular.min.js"></script>
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="/bower_components/lodash/lodash.min.js"></script>
+
+    <!-- boostrap -->
+    <script src="/app.module.js"></script>
+    <script src="/app.constants.js"></script>
+
+    <script src="/layout/layout.module.js"></script>
+    <script src="/layout/layout.ctrl.js"></script>
+
+    <script src="/customer/customers.ctrl.js"></script>
+    <script src="/customer/customers.directive.js"></script>
+
+    <script src="/customer/addcustomer.ctrl.js"></script>
+    <script src="/customer/addcustomer.directive.js"></script>
+</body>
+</html>
